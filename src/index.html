@@ -11,7 +11,65 @@
 </head>
 
 <body>
-  <main></main>
+  <main>
+    <style>
+      @keyframes icon {
+        from {
+          transform: scale(0.7);
+        }
+        to {
+          transform: scale(1.1);
+        }
+      }
+
+      @-moz-keyframes icon {
+        from {
+          transform: scale(0.7);
+        }
+        to {
+          transform: scale(1);
+        }
+      }
+
+      .block {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .icon {
+        animation: icon 0.8s infinite;
+        transition: all 0.2s ease-in-out;
+        margin: 0.25rem;
+        width: 30px;
+        height: 30px;
+        background: url('data:image/png;base64,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');
+        background-position: center center;
+        background-size: 90%;
+        background-repeat: no-repeat;
+        opacity: 0.2;
+        float: left;
+      }
+
+      .i1 {
+        animation-delay: 0s;
+      }
+
+      .i2 {
+        animation-delay: 0.2s;
+      }
+
+      .i3 {
+        animation-delay: 0.4s
+      }
+    </style>
+    <div class="block">
+      <div class="icon i1"></div>
+      <div class="icon i2"></div>
+      <div class="icon i3"></div>
+    </div>
+  </main>
 </body>
 
 </html>

@@ -1,1 +1,21 @@
-@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/_functions";
+@import "~bootstrap/scss/_variables";
+/**
+ * Color variables
+ */
+
+$c-red: #f44336;
+$c-gray: #cfd8dc;
+$c-amber: #ffc107;
+$c-purple: #673ab7;
+/**
+ * Element spacer & glutters
+ */
+
+$e-glutter: 1rem;
+/**
+ * Positioning element's on page
+ */
+
+$positions: ('relative', 'absolute', 'skicky', 'fixed');
+$overflow: ('hidden', 'visible', 'auto')

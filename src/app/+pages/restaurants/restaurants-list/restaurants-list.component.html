@@ -1,0 +1,30 @@
+<div class="pt-2 w-100 wrapper">
+  <div *ngIf="!restaurants" class="row flex-1">
+    <div class="col relative">
+      <loader></loader>
+    </div>
+  </div>
+
+  <div *ngIf="!!restaurants" class="row flex-1">
+    <a class="col-12 col-md-6 col-lg-6 col-xl-4 pb-4" *ngFor="let restaurant of restaurants" href="#">
+      <div class="card mx-auto animated fadeIn">
+        <div class="card-img-top relative" [style.backgroundImage]="'url('+restaurant.coverImage+')'">
+          <div class="card-img-top-emphasis" [style.backgroundImage]="'url('+restaurant?.logoImage+')'"></div>
+        </div>
+        <div class="card-body">
+          <h3 class="card-title mb-0">{{restaurant?.name}}</h3>
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-auto pl-0">
+                <rating-stars [rating]="restaurant?.review"></rating-stars>
+              </div>
+              <div class="col pr-0 d-flex justify-content-end align-items-center">
+                <span class="badge badge-primary">comida {{restaurant?.cooking.toLowerCase()}}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>

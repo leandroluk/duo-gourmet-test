@@ -1,0 +1,16 @@
+@import '_variables';
+/**/
+
+.navbar {
+  padding-top: $e-glutter;
+  padding-bottom: $e-glutter;
+  justify-content: center;
+}
+
+.navbar-brand {
+  margin: 0;
+  img {
+    max-width: 100%;
+    max-height: 50px;
+  }
+}

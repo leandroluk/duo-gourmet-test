@@ -1,0 +1,38 @@
+$input-icon-size: 38px;
+@mixin placeholder($foreground-color: white) {
+  $cross-browser: ('::-webkit-input-', '::-moz-', ':-ms-input-', ':-moz-', '::', ':');
+  @each $item in $cross-browser {
+    &#{$item}placeholder {
+      color: $foreground-color;
+    }
+  }
+}
+
+:host {
+  .input-group {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+  }
+  .form-control,
+  .input-group-text {
+    @include placeholder();
+    transition: all 0.2s ease-in-out;
+    border-color: rgba(255, 255, 255, .2);
+    background-color: transparent;
+    opacity: 0.5;
+    border-radius: 1rem;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  .form-control {
+    padding-left: $input-icon-size;
+    color: white;
+  }
+  .input-group-text {
+    border: none;
+    position: absolute;
+    height: $input-icon-size;
+    width: $input-icon-size;
+  }
+}

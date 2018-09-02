@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col">
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <svg class="input-group-text" id="filter-search" viewBox="0 0 32 32" width="64" height="64" fill="none" stroke="white" stroke-linecap="round"
+          stroke-linejoin="round" stroke-width="2">
+          <circle cx="14" cy="14" r="12" />
+          <path d="M23 23 L30 30" />
+        </svg>
+      </div>
+      <input type="text" class="form-control" #query (keyup)="onQuery(query.value)" placeholder="pesquise lugares, tipos, comidas, etc..."
+        aria-label="filter-search">
+    </div>
+  </div>
+</div>

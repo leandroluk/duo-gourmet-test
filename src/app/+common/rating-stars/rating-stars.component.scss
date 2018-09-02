@@ -1,0 +1,33 @@
+@import '_variables';
+/**/
+
+.ratings {
+  position: relative;
+  vertical-align: middle;
+  display: inline-block;
+  color: $c-gray;
+  overflow: hidden;
+}
+
+.full-stars {
+  position: absolute;
+  left: 0;
+  top: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  color: $c-amber;
+}
+
+.empty-stars:before,
+.full-stars:before {
+  content: "\2605\2605\2605\2605\2605";
+  font-size: 14pt;
+}
+
+.empty-stars:before {
+  -webkit-text-stroke: 1px $c-gray;
+}
+
+.full-stars:before {
+  -webkit-text-stroke: 1px $c-amber;
+}
