@@ -13,7 +13,7 @@ O projeto foi desenvolvido utilizando Angular 2 (v5+) e atende aos requisitos de
 ## Passo a passo para rodar o projeto
 
 ```sh
-$ git clone https://github.com/leandroluk/duo-gourmet-test.git`
+$ git clone https://github.com/leandroluk/duo-gourmet-test.git
 $ cd duo-gourmet-test
 $ npm i -g @angular/cli
 $ npm install
