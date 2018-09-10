@@ -23,4 +23,4 @@ $ npm start
 ## Notas de versão
 
  - O projeto foi desenvolvido utilizando definições simples de SEO.
- - Como o website da Duo Gourmet é desenvolvido utilizando AngularJS, o projeto foi feito utilizando Angular para otimizar o projeto apresentado;
+ - Como o website da Duo Gourmet é desenvolvido utilizando AngularJS, o projeto foi feito utilizando Angular para otimizar o problema apresentado;
